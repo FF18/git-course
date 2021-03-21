@@ -1,4 +1,5 @@
 Book - https://git-scm.com/book/ru/v2
+List of DOS commands - https://en.wikipedia.org/wiki/List_of_DOS_commands
 
 Git tutorial:
 
