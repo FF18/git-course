@@ -8,7 +8,9 @@
 </head>
 <body>
     <h1>Git & GitHub lesson from YouTube of Minin</h1>
+	<a href="#vid">This video lesson of git on youtube</a>
 	<h2>command Git in terminal VSCode</h2>
+	<b>Additional literature: </b><br>
 	<a href="https://git-scm.com/book/ru/v2" target="_blank">Pro Git book, written by Scott Chacon and Ben Straub</a>
 	<p><a href="https://en.wikipedia.org/wiki/List_of_DOS_commands">List of DOS commands</a></p>
 	<div>
@@ -18,7 +20,7 @@
 			mkdir <name directory> - создаем новую директорию
 		</p>
 		<p>
-			dir - показывает что находится в папке <br>
+			<b>dir</b> - показывает что находится в папке <br>
 			<a href="#" target="_blank"></a>
 			<a href="https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc755121(v=ws.11)?redirectedfrom=MSDN" target="_blank">https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc755121(v=ws.11)?redirectedfrom=MSDN</a>
 			<br>
@@ -28,7 +30,7 @@
 			dir /a:h - показывает все скрытые файлы
 		</p>
 		<p>
-			При работе в команде важно видеть "подписи" тех с кем вы работаете . Для этого есть команда config.<br>
+			При работе в команде важно видеть "подписи" тех с кем вы работаете . Для этого есть команда <b>config</b>.<br>
 			Настройка значений конфигурации Git на глобальном и локальном уровнях проекта.<br>
 			git config --global user.name = "Felix" - ("Etel")<br>
 			git config --global user.email = ""
@@ -48,7 +50,7 @@
 				logs/log.txt - 
 		</p>
 		<p>
-			git branch<br>
+			<b>git branch</b><br>
 				* master<br>
 			git branch test<br>
 			git branch<br>
@@ -73,11 +75,23 @@
 			<h5>Solution:</h5>
 			git config --global --replace-all user.name "The name of your git"<br>
 			git config --global --replace-all uesr.email "Your git mailbox"
-			
-			<h2>GitHub</h2>
-			
-			<h5>присоединить новую работу в repository:</h5>
-			git remote and origin<br>
+		</p>
+		<p>
+			<h3>How do I remove version tracking from a project cloned from git?</h3>
+			<p>
+				<b>How do I remove version tracking from a project cloned from git?</b><br>
+				<b>Remove .git folder from project</b><br>
+				All the data Git uses for information is stored in .git/, so removing it should work just fine. Of course, <br>make sure that your working copy is in the exact state that you want it, because everything else will be lost. <br><b>.git</b> folder is hidden so make sure you turn on the Show hidden files, folders and disks option.
+				<br>
+				From there, you can run git init to create a fresh repository.
+			</p>
+		</p>
+	</div>
+	<div>
+		<h2>GitHub</h2>
+		<h5>присоединить новую работу в repository:</h5>
+			git remote and origin
+		<p>
 			<a href="https://github.com/FF18/git-course.git" target="_blank">https://github.com/FF18/git-course.git</a><br>
 			git push -u origin master
 		</p>
@@ -97,6 +111,33 @@
 			<a href="https://github.com/FF18/git-course.git" target="_blank">git clone "https://github.com/FF18/git-course.git"</a><br>
 			//достаём измененные  файлы из Github <br>
 			git pull
+		</p>
+		<p>
+			<p><a href="https://github.com/FF18" target="_blanck">Rename repository</a></p>
+			github main page => repositories => select repository => select settings => rename 
+		</p>
+		<h3>How to delete repository in github?</h3>
+		<p>
+			From this page, find the <b>repository</b> you want to <b>delete</b>, and click on the title. Then, locate <br> the toolbar at the top and click the Settings tab. Scroll all the way to the bottom of the page <br> until you see the Danger Zone section. Here, click <b>Delete</b> this <b>repository</b>.
+		</p>
+	</div>
+	<div>
+		<b>This video lesson of git on youtube</b>
+		<p><a id="vid" href="https://www.youtube.com/watch?v=zZBiln_2FhM" target="_blank">Git и GitHub Курс Для Новичков</a></p>
+		<p>
+			<b> Таймкоды: </b>
+			<ul>
+				<li><a href="https://www.youtube.com/watch?v=zZBiln_2FhM&t=0s" target="_blank">00:00​ - Что такое Git</a></li>
+				<li><a href="https://www.youtube.com/watch?v=zZBiln_2FhM&t=149s" target="_blank">02:29​ - Установка Git</a></li>
+				<li><a href="https://www.youtube.com/watch?v=zZBiln_2FhM&t=205s" target="_blank">03:25​ - Начало работы</a></li>
+				<li><a href="https://www.youtube.com/watch?v=zZBiln_2FhM&t=400s" target="_blank">06:40​ - Инициализация проекта</a></li>
+				<li><a href="https://www.youtube.com/watch?v=zZBiln_2FhM&t=665s" target="_blank">11:05​ - Первые изменения</a></li>
+				<li><a href="https://www.youtube.com/watch?v=zZBiln_2FhM&t=1045s" target="_blank">17:25​ - Коммит</a></li>
+				<li><a href="https://www.youtube.com/watch?v=zZBiln_2FhM&t=1134s" target="_blank">18:54​ - gitignore</a></li>
+				<li><a href="https://www.youtube.com/watch?v=zZBiln_2FhM&t=1425s" target="_blank">23:45​ - Работа с ветками</a></li>
+				<li><a href="https://www.youtube.com/watch?v=zZBiln_2FhM&t=1895s" target="_blank">31:35​ - Совмещение веток</a></li>
+				<li><a href="https://www.youtube.com/watch?v=zZBiln_2FhM&t=2000s" target="_blank">33:20​ - Работа с Github</a></li>			
+			</ul>
 		</p>
 	</div>
     <!-- <script src="script.js"></script> -->
