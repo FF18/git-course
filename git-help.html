@@ -8,12 +8,18 @@
 </head>
 <body>
     <h1>Git & GitHub lesson from YouTube of Minin</h1>
-	<a href="#vid">This video lesson of git on youtube</a>
+	<a href="#vid">This video lesson of git on youtube - to end of page</a>
 	<h2>command Git in terminal VSCode</h2>
 	<b>Additional literature: </b><br>
+<<<<<<< HEAD
 	<a href="https://git-scm.com/book/ru/v2" target="_blank">Pro Git book, written by Scott Chacon and Ben Straub</a>
 	<p><a href="https://en.wikipedia.org/wiki/List_of_DOS_commands" target="_blank">List of DOS commands</a></p>
+=======
+	<a href="https://git-scm.com/book/ru/v2" target="_blank">Pro Git book, written by Scott Chacon and Ben Straub</a><br>
+	<a href="https://en.wikipedia.org/wiki/List_of_DOS_commands">List of DOS commands</a>
+>>>>>>> 51166d5d76dd443f08518ad1792965468632ecd3
 	<div>
+		<p><a href="https://www.youtube.com/watch?v=zZBiln_2FhM&t=205s" target="_blank">03:25​ - Начало работы</a></p>
 		<p>
 			git --version - проверяем установленную версию git <br>
 			git --help - команды git <br>
@@ -29,22 +35,32 @@
 			dir /a:d - показывает все каталоги<br>
 			dir /a:h - показывает все скрытые файлы
 		</p>
+		<a href="https://www.youtube.com/watch?v=6_hxth-sr9Q&t=392s" target="_blank">config - Git и GitHub для Data Science (это другой урок)</a>
 		<p>
-			При работе в команде важно видеть "подписи" тех с кем вы работаете . Для этого есть команда <b>config</b>.<br>
+			При работе в команде важно видеть "подписи" тех с кем вы работаете . Для этого есть команда <b>config</b><br>
 			Настройка значений конфигурации Git на глобальном и локальном уровнях проекта.<br>
 			git config --global user.name = "Felix" - ("Etel")<br>
-			git config --global user.email = ""
+			git config --global user.email = ""<br>
+			<b>README.md</b><br>
+			git config --global user.name "Felix2" - if you want rename
 		</p>
 		<p>
-			git init - в пустой  директории устанавливает папку .git - инициализируем наш repository<br>
+			<a href="https://www.youtube.com/watch?v=zZBiln_2FhM&t=400s" target="_blank">06:40​ - Инициализация проекта</a><br>
+			Начало работы с Git<br>
+			<b>git init</b> - в пустой  директории устанавливает папку .git - инициализируем наш repository<br>
 			git add <file.format> - (for example index.html) - добавить один файл в git<br>
 			git status - показывает что сейчас происходит в git<br>
 			git rm --cached <file.format> - git перестаём следить за данным файлом <br>
-			cls - очищает terminal<br>
-			git add . - добавляет все файлы в git и измененные  тоже 
+			<b>cls</b> - очищает terminal<br>
 		</p>
+		<a href="https://www.youtube.com/watch?v=zZBiln_2FhM&t=1134s" target="_blank">18:54​ - gitignore</a>
 		<p>
-			git commit --message "first commit" или git commit -m "first commit"<br>
+			<b>.gitignore</b> - создаем в проекте новый файл. <br>
+			В этот файл мы записываем названия всех файлов, которые не должны быть в этой ветке (branch).
+		</p>
+		<a href="https://www.youtube.com/watch?v=zZBiln_2FhM&t=1045s" target="_blank">17:25​ - Коммит</a>
+		<p>
+			<b>git commit -m "first commit"</b> или git commit --message "first commit"<br>
 				errors.txt - <br>
 				.gitignore - <br>
 				logs/log.txt - 
@@ -56,11 +72,11 @@
 			git branch<br>
 				* master<br>
 				  test <br>
-			git branch -D test<br>
-			git branch readme<br>
+				<b>git branch -D test</b> - delete branch with name test<br>
+			git branch readme - добавить branch <br>
 				* master<br>
 				  readme<br>
-			git checkout readme<br>
+			git checkout readme - перейти в другой branch<br>
 			git branch<br>
 				  master<br>
 				* readme
@@ -89,7 +105,8 @@
 	</div>
 	<div>
 		<h2>GitHub</h2>
-		<h5>присоединить новую работу в repository:</h5>
+		<a href="https://www.youtube.com/watch?v=zZBiln_2FhM&t=2000s" target="_blank">33:20​ - Работа с Github</a>
+		<h4>присоединить новую работу в repository:</h4>
 			git remote and origin
 		<p>
 			<a href="https://github.com/FF18/git-course.git" target="_blank">https://github.com/FF18/git-course.git</a><br>
@@ -97,12 +114,12 @@
 		</p>
 		<p> Octotree - GitHub for Chrome - добавить для удобства пользования</p>
 
-			<h5>после изменений файлов, добавляем их в Git, а затем  в Github:</h5>
+			<h4>после изменений файлов, добавляем их в Git, а затем  в Github:</h4>
 			git add .<br>
 			git commit -m""<br>
 			git push <br>
 		<p>
-			<h5>установить работу на другом компьютере из Github:</h5>
+			<h4>установить работу на другом компьютере из Github:</h4>
 			cd..<br>
 			mkdir new-git-project<br>
 			cd new-git-project<br>
@@ -118,7 +135,7 @@
 		</p>
 		<h3>How to delete repository in github?</h3>
 		<p>
-			From this page, find the <b>repository</b> you want to <b>delete</b>, and click on the title. Then, locate <br> the toolbar at the top and click the Settings tab. Scroll all the way to the bottom of the page <br> until you see the Danger Zone section. Here, click <b>Delete</b> this <b>repository</b>.
+			Find the <b>repository</b> you want to <b>delete</b>, and click on the title. Then, locate <br> the toolbar at the top and click the <b>Settings</b> tab. Scroll all the <b>way to the bottom of the page </b><br>until you see the Danger Zone section. Here, click <b>Delete</b> this <b>repository</b>.
 		</p>
 	</div>
 	<div>
@@ -139,6 +156,7 @@
 				<li><a href="https://www.youtube.com/watch?v=zZBiln_2FhM&t=2000s" target="_blank">33:20​ - Работа с Github</a></li>			
 			</ul>
 		</p>
+		<a href="#"><b> to top of page</b></a><br>
 	</div>
     <!-- <script src="script.js"></script> -->
 </body>
