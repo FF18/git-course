@@ -1,0 +1,62 @@
+Git and Github first steps.
+
+======================
+GIT first COMMANDS:
+
+git config --global user.name "Your Name"
+git config --global user.email "your_email@course.com"
+README.md
+
+git init
+git status
+.gitignore
+git add .
+git commit -m"first commit"
+
+GITHUB first COMMANDS:
+
+// new repository
+git remote and origin https://github.com/.../....git // create a new repository
+git push -u origin master // push an existing repository
+=====================
+
+GIT additional COMMANDS:
+
+git rm --cached index.html
+cls
+git branch
+git branch test
+git branch -D test
+git checkout test
+git merge test
+---------------------
+
+GIT COMMANDS after change files:
+
+git add .
+git commit -m"second commit"
+git push
+---------------------
+
+Create project on another computer from GITHUB:
+
+mkdir new-git-project
+cd new-git-project
+git clone "https://github.com/.../....git"
+----------------------
+
+GITHUB additional COMMANDS:
+
+git pull
+github main page => repositories => repository => settings => rename
+github main page => repositories => repository => settings => (to bottom of page) delete (this repository)
+----------------------
+
+GIT COMMANDS change files from another computer:
+
+merge (for unite two branches)
+git add .
+git commit -m""
+git status
+git push (from 1 computer to github)
+git pull (from github to 2 computer)
